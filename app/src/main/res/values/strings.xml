@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SignInAuthFirebase</string>
+    <string name="google_sing_in">Google Sing In</string>
+    <string name="google_sign_out">Google Sign Out</string>
+    <string name="facebook_app_id">1173844936885012</string>
+    <string name="fb_login_protocol_scheme">fb1173844936885012</string>
+    <string name="facebook_client_token">9767504fa71b39af1c39c2f4b6a108b3</string>
+    <string name="zalo_sign_in">Zalo Sign In</string>
+
+    <string name="appID">2471933228658520287</string>
+    <string name="zalo_login_protocol_scheme">zalo-2471933228658520287</string>
+    <string name="zalo_sign_out">Zalo Sign Out</string>
+    <string name="web_client_token_id">1046672003876-1ncgplk5nu2jnctl3k36smr656if539v.apps.googleusercontent.com</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in">Sign In</string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="zalo">ZALO</string>
+    <string name="google">GOOGLE</string>
+
+
+</resources>

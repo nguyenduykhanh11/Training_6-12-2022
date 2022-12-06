@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_500"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/tv_title_zalo"/>
+    <TextView
+        android:id="@+id/tv_title_zalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linear_layout_gogole"
+        android:text="@string/google"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:id="@+id/linear_layout_gogole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <Button
+            android:id="@+id/btn_goodle"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            style="?android:attr/buttonStyleInset" />
+        <Button
+            android:id="@+id/btn_goodle_sign_out"
+            android:layout_width="wrap_content"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_out"
+            style="?android:attr/buttonStyleInset" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_title_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_gogole"
+        android:text="@string/facebook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:id="@+id/linear_layout_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_facebook">
+        <Button
+            android:id="@+id/btn_login_facebook"
+            android:layout_width="wrap_content"
+            android:text="@string/sign_in"
+            android:layout_marginEnd="20dp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_sign_out_facebook"
+            android:layout_width="wrap_content"
+            android:text="@string/sign_out"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
